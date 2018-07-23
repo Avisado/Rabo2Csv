@@ -17,7 +17,7 @@ def csv_to_df(file):
     df = pd.read_csv(
         file,
         sep=',',
-        converters={  # Converteer bedragkolommen naar amerikaasnse notatie, 2 decimalen
+        converters={  # Converteer bedragkolommen naar amerikaanse notatie, 2 decimalen
             'Bedrag': toFloat,
             'Saldo na trn': toFloat,
             'Oorspr bedrag': toFloat,
